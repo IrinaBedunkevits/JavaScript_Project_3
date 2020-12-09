@@ -1,212 +1,149 @@
-/* jQuery */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0ff;
+  font-family: Arial;
+}
+
 #container {
-  width: 90%;
-  margin: auto;
-  padding: 10px;
-}
-#box {
-  background: #333;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   width: 500px;
-  height: 90px;
-  padding: 40px;
-  text-align: center;
-}
-#box2 {
-  background: red;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  border: 4px #000 solid;
-  margin-top: 10px;
+  background-color: #fafafa;
+  padding: 0px;
+  box-shadow: 0 20px 30px 0 rgba(1, 1, 1, 0.07);
+  margin: 6rem 0;
+  border-radius: 0.75rem;
 }
 
-/* FIRST HEADING -- section id="kremlist1"*/
-* {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  text-align: center;
-  color: #006600 !important;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin-bottom: 100px;
-}
-h1::after {
-  content: "";
-  background: #006600;
-  display: block;
-  height: 3px;
-  width: 30%;
-  margin: 20px auto 5px;
-}
-h2 {
-  text-align: center;
-  color: #006600 !important;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  font-family: sans-serif;
-}
-.linkki {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 15px 15px 30px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff !important;
-  border-radius: 3px;
-  font-size: 30px;
-  padding: 15px 30px;
-  transition: 0.7s;
-  position: relative;
-}
-.linkki:hover {
-  background-color: #021d02;
-  width: fit-content;
-}
-/* SECOND HEADING -- id="filldata"*/
-#filldata {
-  text-align: center;
-  color: #006600 !important;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-#filldata::after {
-  content: "";
-  background: #006600;
-  display: block;
-  height: 3px;
-  width: 25%;
-  margin: 20px auto 5px;
-}
-
-/* FORM -- div class="to-do"*/
-.to-do {
-  margin: 0 auto;
-  width: fit-content;
-  color: #2a3819;
-  font-family: sans-serif;
-}
-.to-do p {
-  font-weight: bold;
-  padding: 0;
-}
-.to-do input {
+#footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  align-self: flex-start;
+  text-transform: uppercase;
+  box-shadow: 0 -10px 10px 0 rgba(1, 1, 1, 0.05);
 }
-.to-do input[type="text"] {
-  border: none;
-  border-bottom: 1px solid black;
+#footer #taskAdd {
+  transition: all 0.3s ease-in-out;
+  width: 3rem;
+  height: 3rem;
+  background: #3b44fb;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  border-radius: 0.75rem;
+  border: 0;
+  outline: 0;
+  will-change: transform;
+}
+#footer #taskAdd:hover {
+  background: #050fe5;
+  transform: scale(0.95);
+}
+#footer #taskAdd:active {
+  transform: scale(0.9);
+}
+#footer input#taskInput {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   background: transparent;
-  height: 38px;
-  color: #006400;
-  font-size: 16px;
+  width: calc(100% - 3rem - 5px);
+  border: none;
 }
-.to-do input[type="submit"] {
-  background: #2a3819;
-  height: 38px;
-  color: #f5f5dc;
-  font-size: 16px;
-  width: 40%;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  transition: 0.5s;
-  border-radius: 5px;
+#footer input#taskInput:focus {
+  outline: 0;
+  border-color: white;
+  color: #0d0d0d;
 }
-.to-do input[type="submit"]:hover {
-  background-color: #006600;
+
+#tasks {
+  padding: 1.5rem 2rem;
 }
-li {
+#tasks #tasksList {
   list-style-type: none;
+  padding-left: 0;
 }
-/*section id="kremlist1" and section id="kremlist2"*/
-#kremlist1 {
-  background-image: linear-gradient(rgba(15, 62, 15, 0), rgba(15, 62, 15, 1)),
-    url(kuvat/kremit3.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #efefef !important;
-  background-attachment: fixed;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-#kremlist1 h1,
-#contact h1 {
-  text-align: center;
-  color: #efefef !important;
-  padding-bottom: 10px;
-  color: #fff;
-  font-size: 42px;
-  text-shadow: 2px 2px 4px #000000;
-  font-family: sans-serif;
-}
-#kremlist1 h1::after,
-#contact h1::after {
-  content: "";
-  background: #efefef;
-  display: block;
-  height: 3px;
-  width: 30%;
-  margin: 20px auto 5px;
-}
-#contact {
-  background-image: linear-gradient(rgba(15, 62, 15, 0), rgba(15, 62, 15, 1)),
-    url(kuvat/kremit1.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #efefef !important;
-  background-attachment: fixed;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-/*THIRD HEDING*/
-.lastHeading {
-  text-align: center;
-  color: #fff !important;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  font-family: sans-serif;
-}
-.lastHeading::after {
-  content: "";
-  background: #fff;
-  display: block;
-  height: 3px;
-  width: 25%;
-  margin: 20px auto 5px;
-}
-.contact-form {
-  padding: 15px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
+#tasks #tasksList li {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 20px 30px 0 rgba(1, 1, 1, 0.07);
+  border-radius: 0.75rem;
+  color: #0d0d0d;
+  padding: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  animation: fadeIn 0.5s linear;
+  background-color: #fff;
+  margin-bottom: 5px;
   position: relative;
+  border-right: 0px solid lightgray;
+  letter-spacing: -0.015rem;
+  will-change: transform;
 }
-.form-control {
-  border-radius: 0 !important;
-  border: none !important;
-  margin: 3px;
-  width: 400px;
-  height: 30px;
+#tasks #tasksList li:hover {
+  border-right: 55px solid red;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  z-index: 20;
+  box-shadow: 0 20px 30px 0 rgba(1, 1, 1, 0.2);
 }
-::placeholder {
-  color: #999 !important;
+#tasks #tasksList li:hover .delete {
+  right: -37px;
+  color: white;
 }
-.contact-form input[type="submit"] {
-  background: #2a3819;
-  height: 38px;
-  color: #f5f5dc;
-  font-size: 16px;
-  width: 11%;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  transition: 0.5s;
-  border-radius: 5px;
+#tasks #tasksList li .delete {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  color: transparent;
+  background: none;
+  border: none;
+  outline: 0;
+  line-height: 0.85rem;
+  font-size: 1rem;
 }
-.contact-form input[type="submit"]:hover {
-  background-color: #006600;
+#tasks #tasksList li .delete:hover {
+  opacity: 0.75;
+}
+#tasks #notification {
+  padding-top: 1rem;
+  text-align: center;
+  color: gray;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -50px;
+  }
 }
