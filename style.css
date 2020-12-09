@@ -1,17 +1,4 @@
-body {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f4f4;
-  line-height: normal;
-}
-header {
-  background: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 4px #000 solid;
-  margin-bottom: 10px;
-}
+/* jQuery */
 #container {
   width: 90%;
   margin: auto;
@@ -32,4 +19,194 @@ header {
   position: relative;
   border: 4px #000 solid;
   margin-top: 10px;
+}
+
+/* FIRST HEADING -- section id="kremlist1"*/
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  color: #006600 !important;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+h1::after {
+  content: "";
+  background: #006600;
+  display: block;
+  height: 3px;
+  width: 30%;
+  margin: 20px auto 5px;
+}
+h2 {
+  text-align: center;
+  color: #006600 !important;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-family: sans-serif;
+}
+.linkki {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff !important;
+  border-radius: 3px;
+  font-size: 30px;
+  padding: 15px 30px;
+  transition: 0.7s;
+  position: relative;
+}
+.linkki:hover {
+  background-color: #021d02;
+  width: fit-content;
+}
+/* SECOND HEADING -- id="filldata"*/
+#filldata {
+  text-align: center;
+  color: #006600 !important;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#filldata::after {
+  content: "";
+  background: #006600;
+  display: block;
+  height: 3px;
+  width: 25%;
+  margin: 20px auto 5px;
+}
+
+/* FORM -- div class="to-do"*/
+.to-do {
+  margin: 0 auto;
+  width: fit-content;
+  color: #2a3819;
+  font-family: sans-serif;
+}
+.to-do p {
+  font-weight: bold;
+  padding: 0;
+}
+.to-do input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.to-do input[type="text"] {
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  height: 38px;
+  color: #006400;
+  font-size: 16px;
+}
+.to-do input[type="submit"] {
+  background: #2a3819;
+  height: 38px;
+  color: #f5f5dc;
+  font-size: 16px;
+  width: 40%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.to-do input[type="submit"]:hover {
+  background-color: #006600;
+}
+li {
+  list-style-type: none;
+}
+/*section id="kremlist1" and section id="kremlist2"*/
+#kremlist1 {
+  background-image: linear-gradient(rgba(15, 62, 15, 0), rgba(15, 62, 15, 1)),
+    url(kuvat/kremit3.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#kremlist1 h1,
+#contact h1 {
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 42px;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: sans-serif;
+}
+#kremlist1 h1::after,
+#contact h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 30%;
+  margin: 20px auto 5px;
+}
+#contact {
+  background-image: linear-gradient(rgba(15, 62, 15, 0), rgba(15, 62, 15, 1)),
+    url(kuvat/kremit1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*THIRD HEDING*/
+.lastHeading {
+  text-align: center;
+  color: #fff !important;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-family: sans-serif;
+}
+.lastHeading::after {
+  content: "";
+  background: #fff;
+  display: block;
+  height: 3px;
+  width: 25%;
+  margin: 20px auto 5px;
+}
+.contact-form {
+  padding: 15px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.form-control {
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 3px;
+  width: 400px;
+  height: 30px;
+}
+::placeholder {
+  color: #999 !important;
+}
+.contact-form input[type="submit"] {
+  background: #2a3819;
+  height: 38px;
+  color: #f5f5dc;
+  font-size: 16px;
+  width: 11%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #006600;
 }
