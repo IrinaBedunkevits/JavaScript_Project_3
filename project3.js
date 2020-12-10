@@ -1,20 +1,20 @@
 $(function(){
-    var $tasksList = $("#tasksList");
+    var $myNotes = $("#myNotes");
     var $taskInput = $("#taskInput");
     var $notification = $("#notification");
 
     var displayNotification = function() {
-        if (!$tasksList.children().lenght) {
+        if (!$myNotes.children().lenght) {
             $notification.fadeIn("fast");
         } else {
             $notification.css("display", "none")
         }
     }
 
-    $("#taskAdd").on("click", function() {
+    $("#Addbtn").on("click", function() {
         if(!$taskInput.val()) {return false;}
 
-        $tasksList.append("<li>" + $taskInput.val() + "<button class='delete'>&#10006</button></li>");
+        $myNotes.append("<li>" + $taskInput.val() + "<button class='delete'>Delete</button></li>");
 
         $taskInput.val("");
 
