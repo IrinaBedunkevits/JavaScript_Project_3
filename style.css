@@ -160,7 +160,7 @@ body {
 #notes #myNotes li .delete:hover {
   opacity: 0.75;
 }
-#notes #notification {
+#notes #myWishes {
   padding-top: 1rem;
   text-align: center;
   color: gray;

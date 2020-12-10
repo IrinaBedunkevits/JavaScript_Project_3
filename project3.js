@@ -1,13 +1,13 @@
 $(function(){
     var $myNotes = $("#myNotes");
     var $taskInput = $("#taskInput");
-    var $notification = $("#notification");
+    var $myWishes = $("#myWishes");
 
-    var displayNotification = function() {
+    var showMyWishes = function() {
         if (!$myNotes.children().lenght) {
-            $notification.fadeIn("fast");
+            $myWishes.fadeIn("fast");
         } else {
-            $notification.css("display", "none")
+            $myWishes.css("display", "none")
         }
     }
 
@@ -18,7 +18,7 @@ $(function(){
 
         $taskInput.val("");
 
-        displayNotification();
+        showMyWishes();
 
         $(".delete").on("click", function() {
             var $parent = $(this).parent();
@@ -27,8 +27,8 @@ $(function(){
 
             setTimeout(function(){
                 $parent.remove();
-                displayNotification();
-            }, 295)
+                showMyWishes();
+            }, 500)
         })
     })
 });
