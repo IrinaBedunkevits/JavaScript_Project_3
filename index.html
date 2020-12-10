@@ -10,18 +10,52 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="container">
+<!--FIRST HEADING-->
+    <section id="kremlist1">
+        <h1>KERMIT'S TO-DO LIST</h1>
+        <h2><a class="linkki" href="https://fi.wikipedia.org/wiki/Kermit" target="_blank">WHO IS KERMIT?</a></h2>
+    </section>
+<!--To-do container-->
+    <div id="to-do-cont">
         <div id="tasks">
-            <div id="notifications">Task list is empty</div>
+            <div id="notifications">Write down what do you want to do</div>
             <ul id="tasksList">
 
             </ul>
         </div>
         <div id="footer">
             <input type="text" id="taskInput" placeholder="Your task">
-            <button id="taskAdd">+</button>
+            <button id="taskAdd">Add</button>
         </div>
     </div>
+<!--THIRD HEADING-->
+<br>
+<section id="contact">
+
+<h2 class="lastHeading" >CONTACT US</h2>
+<form class="contact-form">
+  <div class="form-group">
+  <input type="text" class="form-control" placeholder="NAME" required>
+  </div>
+  <div class="form-group">
+  <input type="text" class="form-control" placeholder="ADDRESS" required>
+  </div>
+  <div class="form-group">
+  <input type="email" class="form-control" placeholder="EMAIL" required>
+  </div>
+  <div class="form-group">
+  <input type="number" class="form-control" placeholder="PHONENUMBER" required>
+  </div>
+  <br>
+  <div id="text">
+  <p><input id="comment" onchange="commentBox()" type="checkbox" > I´d also like to leave a comment</p>
+  <p id="hide" ><textarea class="form-control" rows="4" placeholder="COMMENT"></textarea></p>
+  </div>
+  <br>
+  <input id="message" type="submit" value="SEND"><br>
+  <p id="thankyou" ></p>
+</form>
+</section> 
     <script src="project3.js"></script>
  </body>
 </html>
