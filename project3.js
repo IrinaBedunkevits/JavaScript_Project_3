@@ -32,3 +32,11 @@ $(function(){
         })
     })
 });
+$(document).ready(function(){
+    $('#btnSlideDown').click(function(){
+        $('#contact').slideDown(3000);
+    });
+    $('#btnSlideUp').click(function(){
+        $('#contact').slideUp(3000);
+    });
+});
