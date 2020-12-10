@@ -23,12 +23,10 @@ $(function(){
         $(".delete").on("click", function() {
             var $parent = $(this).parent();
 
-            $parent.css("animation", "fadeOut .3s linear");
-
             setTimeout(function(){
                 $parent.remove();
                 showMyWishes();
-            }, 500)
+            }, 100)
         })
     })
 });

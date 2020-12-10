@@ -92,7 +92,6 @@ body {
   width: 500px;
   background-color: #fafafa;
   padding: 10px;
-  box-shadow: 0 20px 30px 0 rgba(1, 1, 1, 0.07);
   margin: 10px 0;
   border-radius: 10px;
   display: block;
@@ -137,7 +136,6 @@ body {
   padding: 20px;
   font-size: 20px;
   font-weight: 400;
-  animation: fadeIn 0.5s linear; /*ANIMATION*/
   background-color: #fff;
   margin-bottom: 5px;
   position: relative;
@@ -165,35 +163,7 @@ body {
   text-align: center;
   color: gray;
   font-weight: 500;
-  font-size: 1.25rem;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    margin-top: -50px;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0px;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    margin-top: 0px;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    margin-top: -50px;
-  }
+  font-size: 20px;
 }
 /*Open and close contactbox buttons*/
 #btnSlideDown {
