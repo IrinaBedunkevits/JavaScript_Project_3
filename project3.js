@@ -1,6 +1,6 @@
 $(function(){
     var $myNotes = $("#myNotes");
-    var $taskInput = $("#taskInput");
+    var $noteInput = $("#noteInput");
     var $myWishes = $("#myWishes");
 
     var showMyWishes = function() {
@@ -12,11 +12,11 @@ $(function(){
     }
 
     $("#Addbtn").on("click", function() {
-        if(!$taskInput.val()) {return false;}
+        if(!$noteInput.val()) {return false;}
 
-        $myNotes.append("<li>" + $taskInput.val() + "<button class='delete'>Delete</button></li>");
+        $myNotes.append("<li>" + $noteInput.val() + "<button class='delete'>Delete</button></li>");
 
-        $taskInput.val("");
+        $noteInput.val("");
 
         showMyWishes();
 

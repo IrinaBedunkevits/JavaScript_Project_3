@@ -116,7 +116,7 @@ body {
 #writeIn #Addbtn:hover {
   background: #47c781;
 }
-#writeIn input#taskInput {
+#writeIn input#noteInput {
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 20px;
